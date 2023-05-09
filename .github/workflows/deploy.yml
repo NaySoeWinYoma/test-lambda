@@ -1,0 +1,12 @@
+name: Deploy
+on:
+  pull_request:
+    types: [opened]
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: NaySoeWinYoma/lambda-actions
+        with:
+          aws-key: "UIUSHFOSOSOSOW"
